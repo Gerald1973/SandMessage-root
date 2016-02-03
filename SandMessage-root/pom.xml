@@ -1,16 +1,19 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>smilesmile1973.com</groupId>
+	<groupId>com.smilesmile1973</groupId>
 	<artifactId>SandMessage-root</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<description>Root maven for SandMessage</description>
+	<properties>
+		<version.junit>3.8.1</version.junit>
+		<version.spring>4.2.4.RELEASE</version.spring>
+		<version.hsqldb>2.3.3</version.hsqldb>
+		<version.hibernate>5.0.0.Final</version.hibernate>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
 
-	<modules>
-		<module>../SandMessage-dao</module>
-		<module>../SandMessage</module>
-	</modules>
 
 	<dependencyManagement>
 		<dependencies>
@@ -72,4 +75,8 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
+	<modules>
+		<module>../SandMessage/SandMessage</module>
+		<!--<module>../../SandMessage-dao/SandMessage-dao</module>-->
+	</modules>
 </project>
