@@ -73,10 +73,16 @@
 				<artifactId>jstl</artifactId>
 				<version>1.2</version>
 			</dependency>
+			<dependency>
+				<groupId>javax</groupId>
+				<artifactId>javaee-web-api</artifactId>
+				<version>6.0</version>
+				<scope>provided</scope>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 	<modules>
-		<module>../SandMessage/SandMessage</module>
-		<!--<module>../../SandMessage-dao/SandMessage-dao</module>-->
+		<module>../../SandMessage/SandMessage</module>
+		<module>../../SandMessage-dao/SandMessage-dao</module>
 	</modules>
 </project>
